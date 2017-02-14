@@ -1,9 +1,11 @@
 # redis-session
 Redis session for asp.net mvc/api share model
 
+from nuget
+
+Install-Package Microsoft.Web.RedisSessionStateProvider
 
 # Mvc
-
 
 # shared Model
     public class TestSessionModel
@@ -23,6 +25,8 @@ Redis session for asp.net mvc/api share model
         public int Id { get; set; }
         public string TestName { get; set; }    
     }
+
+# test mvc stored session passed
 
 # api
    test valuecontroller return TestSessionModel
