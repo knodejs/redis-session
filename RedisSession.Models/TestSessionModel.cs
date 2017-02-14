@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace RedisSession.Models
 {
+    [Serializable]
     public class TestSessionModel
     {
         public int Id { get; set; }

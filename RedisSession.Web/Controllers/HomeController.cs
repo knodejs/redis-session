@@ -11,6 +11,7 @@ namespace RedisSession.Web.Controllers
     {
         public ActionResult Index()
         {
+            //Test Add Redis Sesion
             var model = new TestSessionModel
             {
                 Id = 1,
@@ -22,6 +23,9 @@ namespace RedisSession.Web.Controllers
 
         public ActionResult About()
         {
+            //Test Ger Redis Sesion
+            var model = Session["TestSession"] as TestSessionModel;
+
             ViewBag.Message = "Your application description page.";
 
             return View();
