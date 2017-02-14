@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using RedisSession.Models;
 
 namespace RedisSession.Web.Controllers
 {
@@ -10,6 +11,12 @@ namespace RedisSession.Web.Controllers
     {
         public ActionResult Index()
         {
+            var model = new TestSessionModel
+            {
+                Id = 1,
+                TestName = "Test Redis Session Not put serialize attribute"
+            };
+            Session["TestSession"] = model;
             return View();
         }
 
