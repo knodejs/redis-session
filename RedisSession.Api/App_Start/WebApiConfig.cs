@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using Newtonsoft.Json.Serialization;
 
 namespace RedisSession.Api
 {
@@ -13,6 +14,7 @@ namespace RedisSession.Api
 
             // Web API routes
             config.MapHttpAttributeRoutes();
+            config.Formatters.JsonFormatter.SerializerSettings.ContractResolver = new DefaultContractResolver();
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
