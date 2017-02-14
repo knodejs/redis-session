@@ -4,15 +4,21 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using RedisSession.Models;
 
 namespace RedisSession.Api.Controllers
 {
     public class ValuesController : ApiController
     {
         // GET api/values
-        public IEnumerable<string> Get()
+        public IHttpActionResult Get()
         {
-            return new string[] { "value1", "value2" };
+            var model = new TestSessionModel
+            {
+                Id = 1,
+                TestName = "Test Redis Session Not put serialize attribute"
+            };
+            return Ok(model);
         }
 
         // GET api/values/5
