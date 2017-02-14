@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisSession.Web", "RedisSession.Web\RedisSession.Web.csproj", "{0EC3C23C-07B3-42E0-8F17-F726EF149ACB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisSession.Api", "RedisSession.Api\RedisSession.Api.csproj", "{1190C318-68C9-43F5-B99C-F960734FAC1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisSession.Models", "RedisSession.Models\RedisSession.Models.csproj", "{F118710F-4A40-4D15-A36E-81FB573B6A3F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0EC3C23C-07B3-42E0-8F17-F726EF149ACB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EC3C23C-07B3-42E0-8F17-F726EF149ACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EC3C23C-07B3-42E0-8F17-F726EF149ACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EC3C23C-07B3-42E0-8F17-F726EF149ACB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1190C318-68C9-43F5-B99C-F960734FAC1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1190C318-68C9-43F5-B99C-F960734FAC1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1190C318-68C9-43F5-B99C-F960734FAC1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1190C318-68C9-43F5-B99C-F960734FAC1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F118710F-4A40-4D15-A36E-81FB573B6A3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F118710F-4A40-4D15-A36E-81FB573B6A3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F118710F-4A40-4D15-A36E-81FB573B6A3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F118710F-4A40-4D15-A36E-81FB573B6A3F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
