@@ -45,3 +45,14 @@ we can fix by Update WebapiConfig.cs add
 Reference
 
 http://stackoverflow.com/questions/20914080/make-json-net-and-serializable-attribute-work-together
+
+
+# note:
+
+     next pharse some object change add new model very dangerous 
+for debugging/find some class not put serializable attrubute
+we can fixed by redis store session in string we can change to:
+
+     Set Session >>Json Serialize to string>>redis
+
+     Get session >>Json Deserialize from string to Object
